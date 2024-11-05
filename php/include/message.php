@@ -15,7 +15,7 @@
     <p>
         Neuer Eintrag wurde hinzugefügt!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "update_entry"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "updated_entry"): ?>
     <p>
         Eintrag wurde aktualisiert!
     </p>
@@ -45,32 +45,32 @@
     <p>
         Eingabedaten sind nicht korrekt. Bitte versuchen Sie es erneut.
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "missing_csrf_token"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "missing_csrf_token"): ?>
     <p>
         Fehlendes CSRF-Token!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "invalid_csrf_token"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "invalid_csrf_token"): ?>
     <p>
         Ungültiges CSRF-Token!
     </p>
 <?php elseif (isset($_SESSION["message"]) &&
-    ($_SESSION["message"] === "missing_required_entry_parameters" || $_SESSION["message"] === "missing_parameters")): ?>
+    ($_SESSION["message"] == "missing_required_entry_parameters" || $_SESSION["message"] == "missing_parameters")): ?>
     <p>
         Bitte alle erforderlichen Daten (Titel, Beschreibung, Standort) eingeben!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "unknown_error"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "unknown_error"): ?>
     <p>
         Ein unbekannter Fehler ist aufgetreten!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "wrong_type"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "wrong_type"): ?>
     <p>
         Unerlaubter Dateityp. Die Datei muss ein Bild sein (jpg, gif, png, jpeg)!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "failed_upload"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "failed_upload"): ?>
     <p>
         Ein unerwarteter Fehler ist aufgetreten. Bitte erneut versuchen oder den Admin kontaktieren!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "blocked_entry"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "blocked_entry"): ?>
     <p>
         Admin-Accounts können nicht gelöscht werden!
     </p>
@@ -92,11 +92,11 @@
         Die von Ihnen eingegebenen Anmeldedaten konnten nicht verarbeitet werden. Bitte überprüfen Sie Ihre
         Eingaben und versuchen Sie es erneut.
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] === "missing_checkbox"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "missing_checkbox"): ?>
     <p>
         Um sich zu registrieren, müssen Sie die Allgemeinen Geschäftsbedingungen akzeptieren!
     </p>
-<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] = "account_not_activated"): ?>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "account_not_activated"): ?>
     <p>
         Das Nutzerkonto ist nicht aktiviert!
     </p>
