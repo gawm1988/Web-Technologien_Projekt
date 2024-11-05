@@ -42,6 +42,18 @@ if ($_POST["password"] !== $_POST["password_repeat"]) {
     exit;
 }
 
+
+// Define the password validation regex for 8+ characters, uppercase, lowercase, number, and special character
+$passwordPattern = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$/';
+
+// Check if the new password meets the requirements
+if (!preg_match($passwordPattern, $_POST["password_new"])) {
+    $_SESSION["message"] = "password_invalid_format";
+    $_SESSION["email"] = $_POST["email"];
+    header("Location: ../../registrierung.php");
+    exit;
+}
+
 try {
 
     if ($_POST['terms_of_use'] !== 'on' || $_POST['data_privacy'] !== 'on') {
