@@ -1,0 +1,28 @@
+todos vor Endabgagbe:
+
+Wave und HTML-Validator
+    * Wave: Beitrag anzeigen: Contrast-Error
+
+
+Planungsdokument überarbeiten:
+    * ER-Diagram anpassen - erledigt
+    * Navigationsstruktur fehlt - erledigt
+    * Im Bereich Design und Layout fehlen Angaben darüber, wo/wie eigene Beiträge geändert bzw. gelöscht werden können - erledigt
+    * Im Bereich Design und Layout fehlen Seiten für Anmeldung, Registrierung, Nutzerliste, Neuer Beitrag - erledigt
+
+CSS finalisieren:
+    * Nutzerliste Einträge auf gleiche Breite - erledigt
+    * Beitrag-Anzeigen Beschreibung auf volle Breite
+    * Alle Seiten kontrollieren - erledigt
+
+fehlende Funktionen:
+    * Beiträge können vom Admin nur übernommen, nicht zurückgegeben werden
+
+JavaScript:
+    * ./.
+
+Registrierung:
+    * Datei wird nicht gelöscht, wenn man bereits einen aktivierten Account hat
+
+Fehlermeldungen:
+    * Überprüfen, ob alle messages auf den "header" Seiten abgefangen werden - erledigt

@@ -1,0 +1,23 @@
+@import "global.css";
+
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.map-container a {
+    color: var(--secondary-text-color);
+}
+
+iframe {
+    width: 100%;
+    min-height: 400px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}

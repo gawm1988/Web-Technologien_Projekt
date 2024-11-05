@@ -1,0 +1,230 @@
+/***************************
+Farbgebung der Internetseite
+ ***************************/
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --alt-color: #ffa500;
+
+    --main-bg-color: var(--primary-color);
+    --secondary-bg-color: var(--secondary-color);
+    --alt-bg-color: var(--alt-color);
+    --main-text-color: var(--primary-color);
+    --secondary-text-color: var(--secondary-color);
+    --alt-text-color: var(--alt-color);
+}
+
+/******************************
+Allgemeine Layout-Voreinstellungen
+ ******************************/
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--alt-text-color);
+    min-height: 100dvh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+main {
+    margin: 2rem;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+a {
+    color: var(--main-text-color);
+    text-decoration-line: none;
+}
+
+/*************************
+Layout für die Nav-Leiste
+ *************************/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: var(--alt-bg-color);
+}
+/* Mobile Navigation: Hamburger-Menü standardmäßig anzeigen */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: black;
+    text-decoration-line: none;
+}
+
+.menu-toggle:hover {
+    background-color: var(--secondary-bg-color);
+    border-radius: 8px;
+}
+
+.menu-icon {
+    color: var(--main-text-color);
+}
+
+/* Nav-Leiste standardmäßig verstecken für mobile */
+.nav-items {
+    display: none;
+}
+
+.nav-noscript {
+    display: flex;
+}
+
+/* Große Bildschirme */
+@media (min-width: 800px) {
+    .menu-toggle {
+        display: none; /* Hamburger-Menü auf großen Bildschirmen ausblenden */
+    }
+
+    .nav-items {
+        display: flex; /* Nav-Leiste normal anzeigen */
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-items-noscript {
+        display: none;
+    }
+}
+
+/* Mobile Bildschirme */
+@media (max-width: 799px) {
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-items.show {
+        display: flex; /* Nav-Leiste anzeigen, wenn aktiv */
+    }
+}
+
+.nav-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: var(--main-text-color);
+    text-decoration-line: none;
+    font-size: large;
+    font-weight: bolder;
+}
+.nav-item a:hover {
+    background-color: var(--secondary-bg-color);
+    border-radius: 8px;
+}
+
+/*****************
+Layout für Buttons
+ *****************/
+
+/* Einheitliche Button-Styles für Links und Submit-Buttons */
+.button, .submit-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover, .submit-button:hover {
+    background-color: var(--alt-bg-color);
+}
+
+/* Styles für das Link-Element im Button */
+.button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Styles für das Submit-Button-Element */
+input[type="submit"].submit-button {
+    border: none;
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"].submit-button:hover {
+    background-color: var(--alt-bg-color);
+}
+
+/********************
+Layout für den Footer
+ ********************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--alt-bg-color);
+}
+
+@media (min-width: 650px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+.footer-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    color: var(--main-text-color);
+    text-decoration-line: none;
+    font-size: larger;
+}
+
+.footer-item a:hover {
+    background-color: var(--secondary-bg-color);
+    border-radius: 8px;
+}
+
+/******************
+ * Fehlermeldungen
+ ******************/
+.alert  {
+    text-align: center;
+}
+
+/******************
+ * Cookies
+ ******************/
+.cc-nb-okagree {
+    background-color: var(--alt-bg-color);
+}
+
+.cc-nb-reject {
+    background-color: var(--alt-bg-color);
+}

@@ -1,0 +1,45 @@
+@import url(global.css);
+@import url(formulare.css);
+
+img {
+    max-width: 200px;
+    max-height: 300px;
+    align-self: center;
+}
+
+@media (min-width: 350px) {
+    form {
+        width: 300px;
+    }
+
+    img {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 600px) {
+    form {
+        width: 550px;
+    }
+    img {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 800px) {
+    form {
+        width: 750px;
+    }
+
+    img {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 500px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

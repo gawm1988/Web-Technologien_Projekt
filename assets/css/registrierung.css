@@ -1,0 +1,68 @@
+@import url(global.css);
+@import url(formulare.css);
+
+.registry-success {
+    border: solid white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.registry-success p {
+    color: var(--secondary-text-color);
+    margin: 1rem;
+}
+
+.registry-success a {
+    color: var(--secondary-text-color);
+}
+
+.registry-success form {
+    width: 100%;
+}
+
+.registry-success-form {
+    margin: 1rem;
+}
+
+.registry-success-form input {
+    width: 180px;
+    margin: 1rem 0;
+}
+.registry-success-form label {
+   margin: 1rem 0;
+}
+
+.link {
+    font-weight: bold;
+    color: var(--alt-text-color);
+}
+
+.terms {
+    font-weight: normal;
+    color: var(--secondary-text-color);
+}
+
+.terms a {
+    font-weight: bold;
+    color: var(--alt-text-color);
+}
+
+@media (min-width: 350px) {
+
+    .registry-success-form #code {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .registry-success form {
+        width: 600px;
+    }
+}
+
+@media (min-width: 500px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

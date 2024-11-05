@@ -1,0 +1,89 @@
+/*****************************
+ *Layout für Formularelemente*
+ *****************************/
+
+input[type="email"] {
+    max-width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+input[type="email"]:focus {
+    background-color: var(--alt-bg-color);
+}
+
+input[type="password"] {
+    max-width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+input[type="password"]:focus {
+    background-color: var(--alt-bg-color);
+}
+
+input[type="text"] {
+    max-width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    background-color: var(--alt-bg-color);
+}
+
+textarea {
+    max-width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+textarea:focus {
+    background-color: var(--alt-bg-color);
+}
+
+label {
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.form-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    min-width: 240px;
+}
+
+.form-inputs {
+    border-radius: 8px;
+    max-width: 100%;
+    border: solid var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.form-inputs a {
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+/******************************************************
+ *Weitere Buttons unterhalb des eigentlichen Formulars*
+ ******************************************************/
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
