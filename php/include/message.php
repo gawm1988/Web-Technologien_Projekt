@@ -104,6 +104,10 @@
     <p>
         Konto erfolgreich hinzugefügt, bitte bestätigen Sie Ihre E-Mail-Adresse!
     </p>
+<?php elseif (isset($_SESSION["message"]) && $_SESSION["message"] == "password_invalid_format"): ?>
+    <p>
+        Das Passwort muss mindestens acht Zeichen lang sein sowie einen Großbuchtstaben, einen Kleinbuchstaben, ein Sonderzeichen und eine Zahl enthalten!
+    </p>
 <?php endif;
 unset($_SESSION["message"]);
 ?>

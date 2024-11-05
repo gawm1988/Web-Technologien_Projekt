@@ -28,6 +28,8 @@ Bekannte Fehler:
     * Beiträge können vom Admin nur übernommen, jedoch nicht zurückgegeben werden
     * Ob ein User einen Beitrag ändern darf, wird im Controller gecheckt, jedoch nicht mehr in der
         SammlungPDOSQLite. Dies war nötig, damit der Admin auch ändern / übernehmen kann.
+    * Falls die Datei für den Aktivierungscode nicht erstellt wird, prüf bitte, ob der Ordner "verify"
+            im Verzeichnis "php/controller/" liegt.
     * Registrierungs-Datei wird nicht gelöscht, wenn man bereits einen aktivierten Account hat
     * Beim Laden weiterer Beiträge verschwindet der Button nicht, wenn eine durch 3 teilbare
         Gesamtanzahl (Limit aktuell 3) von Beiträgen besteht

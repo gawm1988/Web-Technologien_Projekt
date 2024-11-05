@@ -44,12 +44,9 @@ include_once $abs_path . "/php/include/nav.php";
         <div class="content-container">
             <div class="details-image">
                 <h2>Bild:</h2>
-                <!--Foto bisher aus dem Internet kopiert, Quelle: https://de.m.wiktionary.org/wiki/Datei:Eber-Skulptur_am_Eingang_des_Eversten_Holzes_im_Oldenburg-Eversten_-_DSCF1057.JPG.
-            todo: gegen eigene Bilder austauschen.-->
                 <img src="<?= htmlspecialchars($beitrag->getPicture()) ?>"
                      alt="<?= htmlspecialchars($beitrag->getTitle()) ?>">
             </div>
-            <!--Der Ort wird später noch durch die Einbindung von OpenStreetMap angepinnt-->
 
             <div class="details-description">
                 <h2>Beschreibung:</h2>

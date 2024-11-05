@@ -50,6 +50,15 @@ if ($_POST["password_new"] !== $_POST["password_new_repeat"]) {
     exit;
 }
 
+// Define the password validation regex for 8+ characters, uppercase, lowercase, number, and special character
+$passwordPattern = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$/';
+
+// Check if the new password meets the requirements
+if (!preg_match($passwordPattern, $_POST["password_new"])) {
+    $_SESSION["message"] = "password_invalid_format";
+    header("Location: ../../passwort-aendern.php");
+    exit;
+}
 
 try {
     $accountsDAO = Accounts::getInstance();
