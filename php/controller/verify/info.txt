@@ -1,0 +1,2 @@
+Datei besteht nur, damit der Ordner ins Repository hochgeladen wird.
+Der Ordner wird für die Aktivierungs-"E-Mails" für die Nutzerkonten benötigt.
